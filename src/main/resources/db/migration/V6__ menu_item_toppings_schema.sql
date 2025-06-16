@@ -1,0 +1,5 @@
+CREATE TABLE item_toppings (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(100) NOT NULL,
+    price DECIMAL(6,2) NOT NULL DEFAULT 0.00
+);

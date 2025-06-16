@@ -1,0 +1,4 @@
+CREATE TABLE item_sizes (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(50) NOT NULL
+);
