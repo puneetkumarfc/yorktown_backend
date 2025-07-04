@@ -24,4 +24,7 @@ public class MenuCategory {
 
     @OneToMany(mappedBy = "category")
     private List<MenuItem> menuItems;
+
+    @Column(name = "display_on_home_page")
+    private Boolean displayOnHomePage = false;
 } 

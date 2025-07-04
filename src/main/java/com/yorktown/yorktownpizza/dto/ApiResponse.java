@@ -1,8 +1,9 @@
 package com.yorktown.yorktownpizza.dto;
 
+import java.io.Serializable;
 import java.util.List;
 
-public class ApiResponse<T> {
+public class ApiResponse<T> implements Serializable {
     private boolean status;
     private List<String> errors;
     private String message;

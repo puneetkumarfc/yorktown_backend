@@ -11,4 +11,7 @@ public interface MenuRepository extends JpaRepository<MenuItem, Integer> {
 
     @Query("SELECT m FROM MenuItem m WHERE m.displayOnHomePage = true AND m.category.id = :categoryId")
     List<MenuItem> findHomePageItemsByCategoryId(@Param("categoryId") Integer categoryId);
+
+    @Query("SELECT m FROM MenuItem m WHERE m.displayOnHomePage = true AND m.category.id IN :categoryIds")
+    List<MenuItem> findHomePageItemsByCategoryIds(@Param("categoryIds") List<Integer> categoryIds);
 } 
